@@ -55,19 +55,20 @@ melakukan aktivitas 𝐴 sebanyak 70.
     result:
     ![](https://github.com/danielcristho/P2_Probstat_B_5025201121/blob/main/src/no1-b.png)
 
-  - tentukanlah apakah terdapat pengaruh yang signifikan secara statistika
-dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan
-aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada
-pengaruh yang signifikan secara statistika dalam hal kadar saturasi
-oksigen , sebelum dan sesudah melakukan aktivitas 𝐴”, dimana disini saya menggunakan function "alternative" untuk print output yang berupa string:
+     - tentukanlah apakah terdapat pengaruh yang signifikan secara statistika
+   dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan
+   aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada
+   pengaruh yang signifikan secara statistika dalam hal kadar saturasi
+   oksigen , sebelum dan sesudah melakukan aktivitas 𝐴”, dimana disini saya menggunakan function "alternative" untuk print output yang berupa string:
 
-  ```r
-  #C
-  install.packages("BSDA")
-  library(BSDA)
-  tValue(h, alternative = 'two.sided', n = tn)
-  ```
-  result:
-  ```r
-  0.1915272
-  ```
+    ```r
+    #C
+    install.packages("BSDA")
+    library(BSDA)
+    tValue(h, alternative = 'two.sided', n = tn)
+    ```
+    result:
+    ```r
+    0.1915272
+    
+    ```
