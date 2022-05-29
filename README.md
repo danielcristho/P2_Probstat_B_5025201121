@@ -31,6 +31,26 @@ melakukan aktivitas 𝐴 sebanyak 70.
     findDeviasi
     ```
     result:
+    
     ```r
     6.35959467611297
     ```
+
+    - Carilah nilai t (p-value):
+
+    ```r
+    #B
+    h = dataFrame$y - dataFrame$x
+    t1 = mean(h)
+    t2 = mean(h[1:6])
+    t3 = 6
+    t4 = sd(h[1:6])
+    tValue = (t2-t1) / (t4/sqrt(t3))
+    tValue
+
+    pValue = 2*pt(-abs(t), df = t3-1)
+    pValue
+    ```
+
+    result:
+    ![](https://github.com/danielcristho/P2_Probstat_B_5025201121/blob/main/src/no1-b.png)
