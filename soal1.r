@@ -20,3 +20,6 @@ pValue = 2*pt(-abs(t), df = t3-1)
 pValue
 
 #C
+install.packages("BSDA")
+library(BSDA)
+tValue(h, alternative = 'two.sided', n = tn)
