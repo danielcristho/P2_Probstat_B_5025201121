@@ -144,4 +144,16 @@ rata-ratanya (α= 0.05)? Buatlah :
         var.equal = TRUE
       )
    ```   
-      
+      result:
+      ```r
+      Standard Two-Sample t-Test
+
+      data:  Summarized x and y
+      t = 1.9267, df = 44, p-value = 0.03024
+      alternative hypothesis: true difference in means is greater than 0
+      95 percent confidence interval:
+       0.1087406        NA
+      sample estimates:
+      mean of x mean of y 
+           3.64      2.79 
+      ```
