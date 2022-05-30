@@ -97,3 +97,51 @@ mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan rata-rata
       ```
 
   - Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!: kesimpulannya adalah mobil yang digunakan rata ratanya lebih dari 20.000 km/tahun
+
+3. Diketahui perusahaan memiliki seorang data analyst ingin memecahkan
+permasalahan pengambilan keputusan dalam perusahaan tersebut. Selanjutnya
+didapatkanlah data berikut dari perusahaan saham tersebut.Dari data diatas berilah keputusan serta kesimpulan yang didapatkan dari hasil
+diatas. Asumsikan nilai variancenya sama, apakah ada perbedaan pada
+rata-ratanya (α= 0.05)? Buatlah :
+   - H0 dan H1:
+     ```r
+      #A
+      sampleMean1 = 3.64
+      sampleDev1 = 1.67
+      jumlahSaham0 = 19
+      sampleMean2 = 2.79
+      sampleDev2 = 1.32
+      jumlahSaham1 = 27
+
+      totalH0 = (sampleMean1 - 0) / (sampleDev1 / sqrt(jumlahSaham0))
+      totalH0
+
+      totalH1 = (sampleMean2 - 0) / (sampleDev2 / sqrt(jumlahSaham1))
+      totalH1
+     ```
+     result: 
+      ```r
+      > totalH0 = (sampleMean1 - 0) / (sampleDev1 / sqrt(jumlahSaham0))
+      > totalH0
+      [1] 9.500834
+      > 
+      > totalH1 = (sampleMean2 - 0) / (sampleDev2 / sqrt(jumlahSaham1))
+      > totalH1
+      [1] 10.98278
+      ```
+   - Hitung Sampel Statistik:
+  
+   ```r
+      #B
+      tsum.test(
+        mean.x=3.64,
+        s.x = 1.67,
+        n.x = 19, 
+        mean.y =2.79,
+        s.y = 1.32,
+        n.y = 27, 
+        alternative = "greater",
+        var.equal = TRUE
+      )
+   ```   
+      
